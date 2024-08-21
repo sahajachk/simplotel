@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.navbar .logo{
+    
+    width: 50px;
+    height: 50px;
+    
+}
+.navbar .icon{
+    
+    width: 25px;
+    height: 25px;
+    
+}
+.navbar .nav-links li {
+    margin: 0 15px;
+    
+}
+.navbar .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-weight: bold;
+    
+}
+.navbar .nav-links a:hover {
+    color: #ddd;
+}
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Switches to horizontal layout */
+        justify-content: space-between;
+    }
+
+    .navbar .nav-links {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar .nav-links li {
+        margin: 5px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    .navbar .logo {
+        font-size: 24px;
+    }
+
+    .navbar .nav-links li {
+        margin: 0 20px;
+        font-size: 18px;
+    }
+}
+.bg-container{
+    position: relative; /* Establishes a containing block for the heading */
+    width: 100%; /* Full width of the container */
+    height: 600px; /* Set a fixed height or adjust as needed */
+    background-image: url('HTML CSS Assignment - 2/heroimg.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire container with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
+    
+    
+}
+.lorem{
+    background-color: rgb(94, 92, 92);
+    position: absolute; /* Positions the button relative to the container */
+    bottom: 20px; /* Adjust the distance from the bottom of the container */
+    width: 200px; /* Adjust the distance from the left side of the container */
+    padding: 10px 20px;
+    color: white; /* Button text color */
+    border: none; /* Removes default border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 16px;
+    margin-left: 20px;
+    background-image: linear-gradient(to right,black,rgb(74, 70, 70));   
+}
+.paragraph-container{
+    background-color: rgb(206, 209, 209);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction:row;
+    padding: 20PX;
+    
+
+    
+}
+.paragraph-container .paragraph{
+    text-decoration: none !important;
+    width: 300px;
+    margin-left: 50px;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+
+}
+.lorem-ipsum-menu{
+    margin-top: 50px;
+    display: flex;
+    margin-left: 60px;
+    
+
+}
+.lorem-ipsum-menu .menu-heading{
+    font-size: 22px;
+    margin: 20px;
+    width: 200px;
+
+}
+.lorem-ipsum-menu card{
+    
+    margin-right: 60px;
+    width: 300px;
+}
+.lorem-ipsum-menu .menu-img{
+    height: 180px;
+    width: 300px;
+    margin-top: 50px;
+}
+.rooms{
+    font-size: 20px;
+    text-align: start;
+}
+.rooms-paragraph{
+    font-size: 16px;
+    text-align: start;
+}
+.menu-card{
+    display: flex;
+    flex-direction: column;
+}
+.button1{
+    
+    justify-content: flex-start !important;
+}
+
+
+.btn-rooms{
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-width: 0px;
+    font-weight: bold;
+}
+
+.dining{
+    font-size: 20px;
+    text-align: center;
+}
+.dining-paragraph{
+    font-size: 16px;
+    text-align: center;
+}
+.button2{
+    
+    text-align: center !important;
+}
+.btn-dining{
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-width: 0px;
+    font-weight: bold;
+}
+
+.pool{
+    font-size: 20px;
+    text-align: end;
+}
+.pool-paragraph{
+    font-size: 16px;
+    text-align: end;
+}
+.button3{
+    text-align:end !important;
+}
+.btn-pool{
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-width: 0px;
+    font-weight: bold;
+}
+
